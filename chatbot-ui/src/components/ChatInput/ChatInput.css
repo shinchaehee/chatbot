@@ -66,10 +66,16 @@
 }
 
 
-/* 추천 질문 셀렉트 위치 조정 */
 .select-wrapper {
-  margin-top: 10px;
-  z-index: 999;
+  width: 100%;
+  background: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* ✅ 살짝 떠 있는 느낌 */
+  margin-bottom: -2px; /* ✅ 입력창과 너무 떨어지지 않게 조정 */
+  z-index: 10;
 }
 
 .autocomplete-select {
@@ -77,3 +83,31 @@
   font-size: 14px;
 }
 
+
+
+.select-list-wrapper {
+  background: white;
+  padding: 9px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin: 12px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+.suggestion-item {
+  font-size: 14.5px;
+  padding: 9px 4px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.suggestion-item:hover {
+  background-color: #f9f9f9;
+}
