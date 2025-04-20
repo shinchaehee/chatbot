@@ -1,0 +1,22 @@
+/* 전체 레이아웃 */
+.App {
+  font-family: 'Arial', sans-serif;
+  background: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 최상위 앱 컨테이너 */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 화면 꽉 채움 */
+}
+
+/* 스크롤 가능한 콘텐츠 영역 */
+.main-content {
+  flex: 1; /* 남은 높이 전부 차지 */
+  overflow-y: auto;
+  padding-bottom: 100px; /* 입력창 가리지 않도록 공간 확보 */
+}

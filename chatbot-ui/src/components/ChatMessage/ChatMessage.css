@@ -1,0 +1,57 @@
+.chat-message {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 20px;
+}
+
+.chat-message.bot {
+  flex-direction: row;
+}
+
+.chat-message.user {
+  flex-direction: row-reverse;
+}
+
+.chat-box {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/* 인삿말 영역 */
+.greeting {
+  background: #f0f4f7;
+  border-radius: 12px;
+  padding: 15px 20px;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ✅ 캐릭터 아이콘 */
+.bot-avatar {
+  width: 34px;
+  height: 34px;
+  margin-right: 8px;
+}
+
+/* ✅ 말풍선 스타일 */
+.message-bubble {
+  background: #f0f0f0;
+  border-radius: 16px;
+  padding: 10px 14px;
+  max-width: 70%;
+  font-size: 14px;
+  line-height: 1.5;
+  word-break: break-word;
+  white-space: pre-wrap; /* ✅ 줄바꿈(\n)을 반영해줌 */
+}
+
+.chat-message.user .message-bubble {
+  background: #d6f0ff;
+  margin-left: 8px;
+}

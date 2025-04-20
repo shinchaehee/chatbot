@@ -1,0 +1,24 @@
+.top-bar {
+  background: linear-gradient(to right, #56c6cc, #0b7a89);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;      /* 메뉴 아이콘 절대 위치를 위해 */
+  color: white;
+}
+
+.full-logo {
+  height: 30px;
+  object-fit: contain;
+}
+
+/* 오른쪽 상단에 고정된 메뉴 아이콘 */
+.menu-icon {
+  height: 18px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

@@ -1,0 +1,115 @@
+.drawer-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  animation: slideIn 0.3s ease-out; /* ✅ 애니메이션 */
+}
+
+.drawer-container.open {
+  transform: translateX(0); /* 오른쪽에서 나옴 */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.drawer-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 150;
+}
+
+
+.drawer-close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 30px;     /* ✅ 크기 키움 */
+  font-weight: 400;    /* ✅ 얇게 설정 */
+  color: #333;         /* (선택) 색상 조정 가능 */
+  cursor: pointer;
+  line-height: 1;
+  font-family: 'Noto Sans', sans-serif
+}
+
+
+
+
+
+.drawer-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;  /* ⬅️ 위에 여백 추가 */
+  margin-bottom: 10px;
+}
+
+.drawer-container p {
+  font-size: 13px;
+  color: #333;            /* 어두운 회색 */
+  line-height: 1.5;
+  margin: 10 0 10px;
+}
+
+
+.drawer-container p.drawer-warning {
+  font-size: 13px;
+  color: #007d94;         /* 강조용 파란색 */
+  font-weight: 650;
+  margin-top: -4px;   /* ✅ 위로 조금 올림 */
+}
+
+
+.drawer-textarea {
+  max-width: 100%;           /* ✅ 우측 넘침 방지 */
+  height: 120px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  resize: none;
+  margin: 12px 0;
+  box-sizing: border-box;    /* ✅ padding 포함한 너비 계산 */
+}
+
+.drawer-textarea::placeholder {
+  padding: 3px 4px;
+  font-size: 13px;         /* 더 작게 */
+  color: #888888;          /* 연한 회색 (기본보다 더 연하게) */
+  font-weight: 400;        /* 기본 폰트 굵기 */
+}
+
+
+.drawer-submit {
+  width: 100%;
+  background-color: #c4c4c4;       /* 연한 회색 */
+  color: white;                    /* 흰색 글자 */
+  border: none;
+  padding: 10px 0;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 1px;
+  margin-top: 4px;
+}
+
+.drawer-submit:active {
+  background-color: #a9a9a9; /* 더 진한 회색 */
+}

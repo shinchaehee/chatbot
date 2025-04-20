@@ -1,0 +1,79 @@
+/* ✅ 위쪽 흰 네모 줄 박스 */
+.autocomplete-box {
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  /* ✅ 회색 박스 위에 자연스럽게 붙이기 */
+  position: relative;
+  z-index: 101;
+}
+
+/* ✅ 회색 고정 박스 */
+.chat-input-bar {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+  border-top: 1px solid #ddd;
+  padding: 10px 20px;
+  z-index: 100;
+}
+
+/* ✅ 채팅 입력창 내부 스타일 유지 */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 98.5%;
+}
+
+.input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.send-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.send-icon {
+  width: 28px;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.send-btn:hover {
+  transform: scale(1.2);
+}
+
+
+/* 추천 질문 셀렉트 위치 조정 */
+.select-wrapper {
+  margin-top: 10px;
+  z-index: 999;
+}
+
+.autocomplete-select {
+  width: 100%;
+  font-size: 14px;
+}
+

@@ -1,0 +1,74 @@
+/* 카테고리 */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);  /* 너비 자동 + 3개 정렬 */
+  gap: 8px 12px;                           /* 세로 8px, 가로 12px 간격 */
+  margin-left: 60px; /* ✅ 말풍선과 같은 위치로 맞춤 */
+  width: calc(100% - 40px); /* 💡 왼쪽+오른쪽 margin 고려 */
+  max-width: 460px;          /* 챗봇 말풍선 max-width랑 맞춤 */
+}
+
+/* 버튼 자체 스타일 - 정사각형 & 크기 축소 */
+.category-btn {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 8px 5px;         /* ✅ 세로 패딩 줄임 */
+  height: 80px;              /* ✅ 버튼 높이 제한 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+/* ✅ hover 효과 유지 */
+.category-btn:hover {
+  background: #f6f6f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.category-btn img {
+  height: 50px;         /* ✅ 크기 증가 */
+  margin-bottom: 6px;   /* 여백 살짝 늘리기 */
+}
+
+.category-wrapper {
+  max-width: 500px;
+  margin-left: 10px;
+}
+
+.category-bottom-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, auto);  /* 너비 자동 + 3개 정렬 */
+  gap: 8px 12px;                           /* 세로 8px, 가로 12px 간격 */
+  margin-left: 60px; /* ✅ 말풍선과 같은 위치로 맞춤 */
+  width: calc(100% - 40px); /* 💡 왼쪽+오른쪽 margin 고려 */
+  margin-top: 15px;
+  max-width: 530px;          /* 챗봇 말풍선 max-width랑 맞춤 */
+}
+
+
+
+/* 용인대학교 챗봇 안내 & 챗봇 안뇽이 이용 TIP */
+.info-btn {
+  flex: 1;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px 0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.info-btn:hover {
+  background: #f6f6f6;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+  transform: translateY(-1px);
+}
